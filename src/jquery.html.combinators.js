@@ -43,5 +43,8 @@
     }
     return returnValue;
   };
-})();
 
+  $builder.build = function (f) {
+    return $builder.safeWith(f, $builder);
+  }
+})();
